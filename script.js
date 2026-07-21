@@ -1,4 +1,4 @@
-const WEBHOOK_URL = "PASTE_YOUR_N8N_CHAT_URL_HERE";
+const WEBHOOK_URL = "https://rv5.app.n8n.cloud/webhook/3d12e474-a7cf-4b30-9372-7e0e6174eb27/chat";
 
 const chatBox = document.getElementById("chatBox");
 
