@@ -1,0 +1,140 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eaf7ec;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:95%;
+max-width:800px;
+height:90vh;
+background:#ffffff;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+display:flex;
+flex-direction:column;
+overflow:hidden;
+}
+
+header{
+background:linear-gradient(135deg,#2e7d32,#43a047);
+padding:25px;
+color:white;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+margin-bottom:8px;
+}
+
+header p{
+opacity:.9;
+}
+
+.chat-box{
+flex:1;
+padding:20px;
+overflow-y:auto;
+background:#f7fff8;
+}
+
+.bot,
+.user{
+max-width:80%;
+padding:15px;
+margin:12px 0;
+border-radius:15px;
+line-height:1.6;
+word-wrap:break-word;
+}
+
+.bot{
+background:#dff5e1;
+border-left:5px solid #2e7d32;
+}
+
+.user{
+background:#2e7d32;
+color:white;
+margin-left:auto;
+}
+
+.input-area{
+display:flex;
+padding:15px;
+background:white;
+border-top:1px solid #ddd;
+}
+
+input{
+flex:1;
+padding:15px;
+font-size:16px;
+border:2px solid #43a047;
+border-radius:10px;
+outline:none;
+}
+
+button{
+margin-left:10px;
+padding:15px 25px;
+border:none;
+border-radius:10px;
+background:#2e7d32;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+.loading{
+display:inline-block;
+width:18px;
+height:18px;
+border:3px solid #ddd;
+border-top:3px solid #2e7d32;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+@media(max-width:768px){
+
+.container{
+width:100%;
+height:100vh;
+border-radius:0;
+}
+
+header h1{
+font-size:26px;
+}
+
+input{
+font-size:14px;
+}
+
+button{
+padding:12px 18px;
+}
+
+}
